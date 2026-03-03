@@ -4,8 +4,8 @@
 #include <cstring>
 #include <stdio.h>
 
-const DWORD_PTR TARGET_OFFSET_0 = 0x87C758; //20260113 EXTRA PASELI
-const DWORD_PTR TARGET_OFFSET_1 = 0x87C788; //20260113 PASELI
+const DWORD_PTR TARGET_OFFSET_20260127_0 = 0x87EAD0; //20260127 PASELI
+const DWORD_PTR TARGET_OFFSET_20260127_1 = 0x87EB38; //20260127 PASELI
 
 
 void GetCurrentDateString(char* buffer, int bufferSize) {
@@ -27,8 +27,8 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
             }
 
             // 计算目标地址
-            char* targetAddress0 = (char*)hSoundVoltex + TARGET_OFFSET_0;
-            char* targetAddress1 = (char*)hSoundVoltex + TARGET_OFFSET_1;
+            char* targetAddress0 = (char*)hSoundVoltex + TARGET_OFFSET_20260127_0;
+            char* targetAddress1 = (char*)hSoundVoltex + TARGET_OFFSET_20260127_1;
 
             // 保存原始页面保护属性
             DWORD oldProtect = 0;
