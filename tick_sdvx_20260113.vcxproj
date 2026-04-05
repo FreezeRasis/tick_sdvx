@@ -24,6 +24,7 @@
     <ProjectGuid>{579be509-10a7-45dd-987e-2a174dc58809}</ProjectGuid>
     <RootNamespace>ticksdvx20260113</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>tick_sdvx</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
